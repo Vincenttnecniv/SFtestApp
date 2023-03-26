@@ -1,5 +1,6 @@
 ({
-    doInit: function(component, event, helper) {
+  doInit: function (component, event, helper) {
+    //Clapped
       // Initialize the attributes with default values
       component.set("v.accountName", "");
       component.set("v.accountIndustry", "");
