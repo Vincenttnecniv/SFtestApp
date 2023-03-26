@@ -1,0 +1,21 @@
+<aura:component controller="CreateAccountController">
+  <aura:attribute name="accountName" type="String" default="" />
+  <aura:attribute name="accountIndustry" type="String" default="" />
+  <div
+    style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 10%"
+  >
+    <lightning:input
+      label="Account Name"
+      value="{!v.accountName}"
+      onchange="{!c.handleAccountNameChange}"
+      class="slds-input"
+    />
+    <lightning:input
+      label="Industry"
+      value="{!v.accountIndustry}"
+      onchange="{!c.handleAccountIndustryChange}"
+      class="slds-input"
+    />
+      <lightning:button label="Create Account" onclick="{!c.createAccountJS}"/>
+  </div>
+</aura:component>
